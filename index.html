@@ -20,6 +20,10 @@
 
 <body>
 
+  <div class="loader">
+    <img src="https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif" alt="Loading....">
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
       <a class="navbar-brand font-weight-bold" href="#">My Portfolio</a>
@@ -107,7 +111,8 @@
       <!-- <div class="bg-dark text-white"> -->
       <div class="row">
         <div class="col-md-12 md-center mt-5 mb-5">
-          <div class="p-3 mb-2 bg-danger text-white">
+          <div class="p-3 mb
+          -2 bg-danger text-white">
             <h2 class="text-center">About</h2>
           </div>
           <hr>
@@ -213,6 +218,14 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+
+
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    });
   </script>
 </body>
 
